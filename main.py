@@ -5,37 +5,24 @@
 
 from PhoneBookContact import PhoneBookContact
 from PhoneBook import PhoneBook
+from util import generarAgenda
 
 agenda = PhoneBook()
-agenda.add(PhoneBookContact("jose", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("jose1", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("jose2", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("ramon", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("lorenza", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("fran", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("lorenza", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("fran", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("jose", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("jose1", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("jose2", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("ramon", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("lorenza", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("fran", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("lorenza", "perez", 23232, "")) 
-agenda.add(PhoneBookContact("fran", "perez", 23232, "")) 
+generarAgenda(agenda, 150)
+
 
 ##########################
 def agregar():
+  telefono = int(input("\nindique el telefono: "))
   nombre = input("\nindique el nombre: ")
   correo = input("\nindique el correo: ")
-  telefono = int(input("\nindique el telefono: "))
   direccion = input("\nindique la direccion: ")
 
   contacto = PhoneBookContact(nombre, correo, telefono, direccion)
   agenda.add(contacto)
 
 def listar():
-  agenda.printAgenda()
+  print(agenda)
   
 def borrar():
   nombre = input("\nindique el nombre a buscar: ")
@@ -44,8 +31,8 @@ def borrar():
     agenda.remove(i)
   
 def buscar():
-  nombre = input("\nindique el nombre a buscar: ")
-  lista = agenda.search(nombre)
+  texto = input("\nindique el nombre a buscar: ")
+  lista = agenda.search(texto)
   for i in lista:
     print(i)
   

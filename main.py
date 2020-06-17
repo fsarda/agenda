@@ -13,7 +13,16 @@ agenda.add(PhoneBookContact("jose2", "perez", 23232, ""))
 agenda.add(PhoneBookContact("ramon", "perez", 23232, "")) 
 agenda.add(PhoneBookContact("lorenza", "perez", 23232, "")) 
 agenda.add(PhoneBookContact("fran", "perez", 23232, "")) 
-
+agenda.add(PhoneBookContact("lorenza", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("fran", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("jose", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("jose1", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("jose2", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("ramon", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("lorenza", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("fran", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("lorenza", "perez", 23232, "")) 
+agenda.add(PhoneBookContact("fran", "perez", 23232, "")) 
 
 ##########################
 def agregar():
